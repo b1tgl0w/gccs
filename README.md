@@ -3,6 +3,7 @@ Print summary of errors in gcc/g++.
 # usage
 g++ main.cpp 2>&1 | ./gccs.pl
 # example
+<pre>
 int main() {  
     int; //missing identifier  
     int missingsemicolon  
@@ -17,6 +18,7 @@ main.cpp:4:1: error: expected initializer before ‘}’ token
  ^  
 Summary of Errors  
 main.cpp: 2 4  
+</pre>
 # to do  
 * Lines with multiple errors print once
 * Option to include warnings in summary
